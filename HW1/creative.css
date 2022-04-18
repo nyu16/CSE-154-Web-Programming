@@ -1,0 +1,58 @@
+/*
+Nicholas Yu
+April 15, 2021
+CSE154 AM
+This is the creative.css page that is linked to the space.html page as well as styling the
+general look of the website specifically for the creative section. It works to specifically
+stylize the creative section as well as add some unique effects.
+*/
+#creative {
+  color: #E0DBD7;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#creative > p {
+  text-align: center;
+}
+
+#hover-rotate {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  overflow: hidden;
+}
+
+#hover-rotate img {
+  transition: 40s;
+  width: 100%;
+  margin: 20px;
+}
+
+#hover-rotate:hover img {
+  transform: scale(0.01) rotate(3600deg);
+}
+
+.bh-facts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #E0DBD7;
+  padding: 30px;
+  border-top: 15px solid #551755;
+  border-bottom: 15px solid #551755;
+  font-size: 20px;
+  color: black;
+}
+
+.bh-facts p {
+  font-size: 24px;
+}
+
+.emphasis {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(1, 135, 245);
+}

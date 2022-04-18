@@ -1,0 +1,146 @@
+/*
+  Nicholas Yu
+  April 15, 2021
+  CSE154 AM
+  This is the style.css page that is linked to the space.html page as well as styling the
+  general look of the website excluding the creative section. It works to give the website
+  a unified theme as well as providing the space-themed (homework required) look.
+*/
+body {
+  background-image: url("img/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#intro section, header, #jokes-container, .jokes-cards {
+  display: flex;
+}
+
+#jokes-container, header {
+  align-items: center;
+}
+
+.jokes-cards, header {
+  flex-direction: column;
+}
+
+header {
+  height: 100vh;
+  justify-content: center;
+}
+
+header > h1 {
+  font-family: 'Coda Caption', sans-serif;
+  text-transform: uppercase;
+  font-size: 120px;
+  margin-bottom: 0px;
+  text-shadow: #551755 20px 15px 20px;
+}
+
+header > blockquote {
+  margin-top: 0px;
+  font-size: 22px;
+}
+
+#intro, #facts, footer {
+  background-color: #E0DBD7;
+}
+
+footer {
+  width: 100%;
+}
+
+footer > p, .jokes-cards {
+  padding: 20px;
+}
+
+#intro, #facts, #jokes {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+h2, footer > p, #jokes > p {
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+#intro, #facts {
+  padding: 30px;
+  border-top: 15px solid #551755;
+  border-bottom: 15px solid #551755;
+}
+
+#intro img {
+  width: 25vw;
+  height: 100%;
+  border-radius: 10%;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+#intro p, #facts li {
+  font-size: 20px;
+}
+
+#facts p, .jokes-cards p {
+  font-size: 24px;
+}
+
+a:link {
+  color: #FFA600;
+}
+
+a:visited {
+  color: #1B505E;
+}
+
+#jokes, header, .exception, span {
+  color: #E0DBD7;
+}
+
+#jokes-container {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+p {
+  justify-content: flex-start;
+  color: black;
+}
+
+.jokes-cards {
+  margin: 15px;
+  height: 400px;
+  width: 300px;
+  background: #9B590D;
+  opacity: 80%;
+}
+
+.jokes-cards img {
+  height: 150px;
+  width: 150px;
+  align-self: center;
+}
+
+hr {
+  width: 65%;
+}
+
+.jokes-cards p {
+  align-self: flex-start;
+}
+
+.answer {
+  opacity: 0;
+  color: #191819;
+}
+
+.jokes-cards:hover .answer {
+  opacity: 1;
+}
